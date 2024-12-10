@@ -1,0 +1,17 @@
+canvas {
+    width: auto; /* Ensure the canvas stretches to the container width */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .chart-container {
+    width: 100%; /* Full width of the parent element */
+    height: calc(100vh - 20px); /* Optional: Adjust height to fill the screen (minus some padding) */
+    max-width: 100%; /* Ensure no limit on width */
+    overflow: hidden; /* Prevent horizontal scrolling */
+    margin: 0 auto; /* Center align */
+    padding: 10px; /* Optional padding for aesthetics */
+    box-sizing: border-box;
+  }
+  
