@@ -14,4 +14,27 @@ canvas {
     padding: 10px; /* Optional padding for aesthetics */
     box-sizing: border-box;
   }
+
+
+  @media only screen and (max-width: 600px) {
+    .progress-item {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the left */
+    }
   
+    .date {
+      font-size: 12px;
+      width: auto; /* Allow the date to wrap if needed */
+      margin-bottom: 5px; /* Add space between date and progress bar */
+    }
+  
+    .progress {
+      width: 100%; /* Make sure progress bar takes up full width */
+      height: 15px; /* Adjust the height for mobile view */
+    }
+  
+    .progress-bar {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
